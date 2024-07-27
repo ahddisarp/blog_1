@@ -7,6 +7,64 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Repository URL
+[Git Repository URL](https://github.com/ahddisarp/blog_1)
+
+## Project report
+### approach
+1. **Setup and Initialize Project:**
+    - Installed VS Code, Node.js, Git, Composer, and Laragon.
+    - Created a GitHub repository and a new Laravel project.
+    - Set up version control with Git and GitHub.
+
+2. **Database Configuration:**
+    - Created `blog_1` in MySQL.
+    - Configured the `.env` file with database details.
+
+3. **Define Routes:**
+    - Defined resource routes in `web.php`.
+
+4. **Create Models and Migrations:**
+    - Generated `Post` model and migration.
+    - Ran migration to set up the database table.
+
+5. **Create Factory and Seeder:**
+    - Generated `PostFactory` and `PostSeeder`.
+    - Seeded the database.
+
+6. **Create Controllers:**
+    - Generated `PostController` and implemented CRUD operations.
+
+7. **Create Blade Views:**
+    - Created master layout `app.blade.php`.
+    - Created views for CRUD operations.
+
+8. **Testing:**
+    - Tested CRUD functionalities. 
+
+9. **GitHub Push:**
+    - Pushed changes to GitHub after each major step.
+
+### Challenges Faced
+
+- **Environment Setup:** 
+    - Issues with Laragon and MySQL on Windows.
+
+
+### Extra Features
+
+#### Comment System
+
+Implemented a comment system for blog posts, allowing users to add, edit, and delete comments.
+
+#### Reason for Bonus Award:
+
+This feature enhances user interaction and demonstrates a deeper understanding of Laravel by extending core functionality.
+
+
+
+Thank you for reviewing my project.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
