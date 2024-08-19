@@ -42,9 +42,9 @@
 
 8. **Blade Views:**
 
-- Developed the admin panel's layout and views using Bootstrap components.
-- Created views for creating, editing, and listing blog posts
-  integrating the frontend with backend logic.
+    - Developed the admin panel's layout and views using Bootstrap components.
+    - Created views for creating, editing, and listing blog posts
+    integrating the frontend with backend logic.
 
 9. **Testing:**
     - Manually tested all authentication and admin panel functionalities.
@@ -60,25 +60,25 @@
 
 
 **Role-based Access Control**
-      Implementing middleware to control admin-only access required careful handling of user roles and permissions.
+    -Implementing middleware to control admin-only access required careful handling of user roles and permissions.
 
 
 ### Extra Features
 
 #### 
 
-- Comments are stored in MongoDB, associated with their respective posts and users.
-- Enhanced the admin panel with role-based access control.
-- Added roles to users so only authorized users can access specific admin functionalities.
+    - Comments are stored in MongoDB, associated with their respective posts and users.
+    - Enhanced the admin panel with role-based access control.
+    - Added roles to users so only authorized users can access specific admin functionalities.
 
 
 #### Reason for Bonus Award:
 
-Implemented additional middleware for ensuring admin access to sensitive routes.
+    -Implemented additional middleware for ensuring admin access to sensitive routes.
 
 #### Future Improvements ####
-- Automated Testing: Implement automated tests for authentication, role-based access control, and CRUD operations.
-- User Profiles: Add user profiles to enable customization and better management of user data.
+    - Automated Testing: Implement automated tests for authentication, role-based access control, and CRUD operations.
+    - User Profiles: Add user profiles to enable customization and better management of user data.
 
 Thank you for reviewing my project.
 
