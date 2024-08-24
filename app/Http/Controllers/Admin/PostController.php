@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -41,12 +41,12 @@ class PostController extends Controller
 
     public function show(Post $post)
     {
-        return view('author.posts.show', compact('post','content'));
+        return view('admin.posts.show', compact('post','content'));
     }
 
     public function edit(Post $post)
     {
-        return view('author.posts.edit', compact('post'));
+        return view('admin.posts.edit', compact('post'));
     }
 
     public function update(Request $request, Post $post)
