@@ -8,60 +8,77 @@
 </p>
 
 ## Repository URL
-[Git Repository URL](https://github.com/ahddisarp/blog_1)
+[Git Repository URL](https://github.com/ahddisarp/blog_1/tree/feature_branch)
 
 ## Project report
 ### approach
 1. **Setup and Initialize Project:**
-    - Installed VS Code, Node.js, Git, Composer, and Laragon.
-    - Created a GitHub repository and a new Laravel project.
-    - Set up version control with Git and GitHub.
+    - Installed essential  tools like  VS Code, Node.js, Git, Composer, and Laragon, mongo db .
+    - Created a new Laravel project and set up version control with GitHub.
+    - Configured MongoDB as the primary database.
 
 2. **Database Configuration:**
-    - Created `blog_1` in MySQL.
-    - Configured the `.env` file with database details.
+    - Created `blog_1` in MongoDB database
+    - Configured the `.env` file with MongoDB database details.
 
-3. **Define Routes:**
-    - Defined resource routes in `web.php`.
+3. **Laravel UI and Authentication**
+    - Installed Laravel UI and set up Bootstrap for the frontend.
+    Generated authentication scaffolding to handle user registration, login, and password resets.
 
-4. **Create Models and Migrations:**
-    - Generated `Post` model and migration.
-    - Ran migration to set up the database table.
+4. **Routes Definition:**
+    -Defined resource routes for handling admin and user operations.
+    -Implemented role-based access control by creating custom middleware for admin routes.
 
-5. **Create Factory and Seeder:**
-    - Generated `PostFactory` and `PostSeeder`.
-    - Seeded the database.
+5. **Model and Migrations:**
+    - Created the Post model and corresponding MongoDB migrations
+    - Ensured database migrations were successfully applied.
 
-6. **Create Controllers:**
-    - Generated `PostController` and implemented CRUD operations.
+6. **Factories and Seeders:**
+    - Generated factories and seeders for populating the posts table with dummy data for testing purposes.
 
-7. **Create Blade Views:**
-    - Created master layout `app.blade.php`.
-    - Created views for CRUD operations.
+7. **Controllers::**
+    -Created controllers to manage CRUD operations for posts and users.
+    - Validated inputs and handled form submissions within the controller methods.
 
-8. **Testing:**
-    - Tested CRUD functionalities. 
+8. **Blade Views:**
 
-9. **GitHub Push:**
+    - Developed the admin panel's layout and views using Bootstrap components.
+    - Created views for creating, editing, and listing blog posts
+    integrating the frontend with backend logic.
+
+9. **Testing:**
+    - Manually tested all authentication and admin panel functionalities.
+    - Ensured role-based access control was functioning correctly by testing with different user roles (admin, user).
+
+10. **GitHub Push:**
     - Pushed changes to GitHub after each major step.
 
 ### Challenges Faced
 
 - **Environment Setup:** 
-    - Issues with Laragon and MySQL on Windows.
+    - Issues with Laragon and MongoDB on Windows.
+
+
+**Role-based Access Control**
+    -Implementing middleware to control admin-only access required careful handling of user roles and permissions.
 
 
 ### Extra Features
 
-#### Comment System
+#### 
 
-Implemented a comment system for blog posts, allowing users to add, edit, and delete comments.
+    - Comments are stored in MongoDB, associated with their respective posts and users.
+    - Enhanced the admin panel with role-based access control.
+    - Added roles to users so only authorized users can access specific admin functionalities.
+
 
 #### Reason for Bonus Award:
 
-This feature enhances user interaction and demonstrates a deeper understanding of Laravel by extending core functionality.
+    -Implemented additional middleware for ensuring admin access to sensitive routes.
 
-
+#### Future Improvements ####
+    - Automated Testing: Implement automated tests for authentication, role-based access control, and CRUD operations.
+    - User Profiles: Add user profiles to enable customization and better management of user data.
 
 Thank you for reviewing my project.
 
