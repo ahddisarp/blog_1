@@ -32,7 +32,6 @@ class PostController extends Controller
             'title' => 'required|max:255',
             'content' => 'required',
         ]);
-
         Post::create($request->only(['title', 'content']));
 
         return redirect()->route('posts.index')
